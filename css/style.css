@@ -198,12 +198,13 @@ a {
 
 .wrapper .block .tagline {
   margin-top: 60px;
-  padding-right: 30px;
+  right: 20px;
 }
 
-.wrapper .block .tagline p {
+.wrapper .block .tagline h1 {
   font-family: "Nether";
   font-size: 64px;
+  text-align: right;
 }
 
 .wrapper .block .baner-2 {
