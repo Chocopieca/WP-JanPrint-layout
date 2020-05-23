@@ -4,7 +4,7 @@
 @import "test"
 @import "sizes"
 
-// main
+// global
 body
     font-family: 'roboto', sans-serif
     color: $text-color
@@ -18,8 +18,27 @@ img
 
 a
     color: $text-color
-    display: block
     cursor: pointer
+    &:hover
+        text-decoration: none
+.button
+    width: 200px
+    height: 40px
+    border-radius: 100px
+    background: $pink
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: 0 0 4px rgb(0,0,0)
+    cursor: pointer
+    position: absolute
+    left: 90px
+    bottom: 20px
+    p
+        font-size: 16px
+        position: relative
+        right: 0
+        color: white
 
 // header
 .top-nav
@@ -35,7 +54,6 @@ a
             margin-left: 45px
             display: inline-block
             a
-                text-decoration: none
                 text-transform: uppercase
                 font-size: $nav-menu
             a:hover
@@ -92,18 +110,7 @@ a
                 width: 70px
                 height: 70px
             .button
-                width: 200px
-                height: 40px
-                border-radius: 100px
                 background: $dark-blue
-                display: flex
-                align-items: center
-                justify-content: center
-                box-shadow: 0 0 4px rgb(0,0,0)
-                cursor: pointer
-                position: absolute
-                left: 90px
-                bottom: 20px
                 p
                     font-size: 16px
         .tagline
@@ -137,31 +144,71 @@ a
                 width: 64px
                 height: 64px
             .button
-                width: 200px
-                height: 40px
-                border-radius: 100px
                 background: $dark-blue
-                display: flex
-                align-items: center
-                justify-content: center
-                box-shadow: 0 0 4px rgb(0,0,0)
-                cursor: pointer
-                position: absolute
-                left: 90px
-                bottom: 20px
                 p
                     font-size: 16px
                     position: relative
                     right: 0
                     bottom: 0
     .block-2
+        padding-bottom: 130px
         .row
-            div::last-child
-                p::nth-child(1)
+            div:last-child
+                color: $text-color-dark
+                p:nth-child(1)
                     font-size: 24px
                     text-transform: uppercase
-                
-                
+                    font-weight: bold
+                    padding-bottom: 55px
+                p:nth-child(2)
+                    line-height: 180%
+                    padding-bottom: 65px
+                .button
+                    background: $pink
+                    p
+                        font-size: 16px
+                        bottom: -27px
+    .block-3
+        .row
+            div
+                img
+                    padding-bottom: 10px
+                .favorites
+                        background-image: url(/img/favorites.png)  
+                        width: 22px
+                        height: 24px
+                        margin-right: 32px
+            div:first-child
+                &::after
+                    content: ""
+                    position: absolute
+                    left: 30px
+                    top: -35px
+                    background-image: url(/img/top.png)
+                    width: 63px
+                    height: 63px
+                p
+                    text-transform: uppercase
+                    font-weight: bold
+                    margin-bottom: 5px
+            .tagline
+                p
+                    font-family: "Nether"
+                    font-size: 54px
+                    text-align: center
+                .button
+                    margin-left: 80px
+                    p
+                        font-family: 'roboto', sans-serif
+                        font-size: 16px
+                        text-transform: uppercase
+                        font-weight: bold
+            div:last-child
+                p
+                    text-transform: uppercase
+                    font-weight: bold
+                    margin-bottom: 5px
+                    
 
 
 

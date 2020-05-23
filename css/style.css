@@ -62,8 +62,40 @@ img {
 
 a {
   color: #636363;
-  display: block;
   cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+  border-radius: 100px;
+  background: #de2a6c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 4px black;
+          box-shadow: 0 0 4px black;
+  cursor: pointer;
+  position: absolute;
+  left: 90px;
+  bottom: 20px;
+}
+
+.button p {
+  font-size: 16px;
+  position: relative;
+  right: 0;
+  color: white;
 }
 
 .top-nav {
@@ -91,7 +123,6 @@ a {
 }
 
 .top-nav_menu li a {
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 1em;
 }
@@ -171,25 +202,7 @@ a {
 }
 
 .wrapper .block .baner-1 .button {
-  width: 200px;
-  height: 40px;
-  border-radius: 100px;
   background: #4972e7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0 0 4px black;
-          box-shadow: 0 0 4px black;
-  cursor: pointer;
-  position: absolute;
-  left: 90px;
-  bottom: 20px;
 }
 
 .wrapper .block .baner-1 .button p {
@@ -237,25 +250,7 @@ a {
 }
 
 .wrapper .block .baner-2 .button {
-  width: 200px;
-  height: 40px;
-  border-radius: 100px;
   background: #4972e7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0 0 4px black;
-          box-shadow: 0 0 4px black;
-  cursor: pointer;
-  position: absolute;
-  left: 90px;
-  bottom: 20px;
 }
 
 .wrapper .block .baner-2 .button p {
@@ -265,7 +260,81 @@ a {
   bottom: 0;
 }
 
-.wrapper .block-2 .row div::last-child p::nth-child(1) {
+.wrapper .block-2 {
+  padding-bottom: 130px;
+}
+
+.wrapper .block-2 .row div:last-child {
+  color: #adafb3;
+}
+
+.wrapper .block-2 .row div:last-child p:nth-child(1) {
   font-size: 24px;
   text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 55px;
+}
+
+.wrapper .block-2 .row div:last-child p:nth-child(2) {
+  line-height: 180%;
+  padding-bottom: 65px;
+}
+
+.wrapper .block-2 .row div:last-child .button {
+  background: #de2a6c;
+}
+
+.wrapper .block-2 .row div:last-child .button p {
+  font-size: 16px;
+  bottom: -27px;
+}
+
+.wrapper .block-3 .row div img {
+  padding-bottom: 10px;
+}
+
+.wrapper .block-3 .row div .favorites {
+  background-image: url(/img/favorites.png);
+  width: 22px;
+  height: 24px;
+  margin-right: 32px;
+}
+
+.wrapper .block-3 .row div:first-child::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: -35px;
+  background-image: url(/img/top.png);
+  width: 63px;
+  height: 63px;
+}
+
+.wrapper .block-3 .row div:first-child p {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wrapper .block-3 .row .tagline p {
+  font-family: "Nether";
+  font-size: 54px;
+  text-align: center;
+}
+
+.wrapper .block-3 .row .tagline .button {
+  margin-left: 80px;
+}
+
+.wrapper .block-3 .row .tagline .button p {
+  font-family: 'roboto', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wrapper .block-3 .row div:last-child p {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
