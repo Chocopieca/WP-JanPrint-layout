@@ -23,20 +23,17 @@ a
 
 // header
 .top-nav
-    padding: 15px
+    padding: 15px 0 45px 0
     .row
         justify-content: space-between
     &_logo
         float: left
     &_menu
         float: left
-        display: flex
-        justify-content: start
-        align-items: center
-        li:first-child
-            margin-left: 0
+        margin: 25px
         li
             margin-left: 45px
+            display: inline-block
             a
                 text-decoration: none
                 text-transform: uppercase
@@ -44,10 +41,11 @@ a
             a:hover
                 color: $text-color
     &_lang
+        position: relative
         float: right
         color: $text-color
         padding-right: 15px
-        margin: auto 0
+        margin: 25px 20px 0
         text-transform: uppercase
         font-size: $nav-menu
         &::after
@@ -67,69 +65,102 @@ a
     &_right
         display: flex
         align-items: center
-        .surch
-            padding: 0
-            display: block
+        margin: 20px auto
+        a
+            padding: 0 10px
+.wrapper
+    .block
+        padding-bottom: 140px
+        .baner-1
             position: relative
-            width: 15px
-            height: 15px
-            left: -15px
-            top: -1px
-            background: transparent
-            border-top: 1px solid $black
-            border-right: 1px solid $black
-            border-bottom: 1px solid $black
-            border-left: 1px solid $black
-            border-radius: 50%
+            width: 350px
+            height: 470px
+            background-image: url(/img/poster-1.png)
+            p
+                font-family: 'roboto', sans-serif
+                font-size: 24px
+                margin: 45px 0
+                color: white
+                text-transform: uppercase
+                font-weight: bold
             &::after
                 content: ""
                 position: absolute
-                width: 10px
-                height: 10px
-                left: 13px
-                top: 8px
-                background: transparent
-                border-bottom: 1px solid $black
-                transform: rotate(45deg)
-        .like
+                left: 10px
+                top: -35px
+                background-image: url(/img/new.png)
+                width: 70px
+                height: 70px
+            .button
+                width: 200px
+                height: 40px
+                border-radius: 100px
+                background: $dark-blue
+                display: flex
+                align-items: center
+                justify-content: center
+                box-shadow: 0 0 4px rgb(0,0,0)
+                cursor: pointer
+                position: absolute
+                left: 90px
+                bottom: 20px
+                p
+                    font-size: 16px
+        .tagline
+            margin-top: 60px
+            padding-right: 30px
+            p
+                font-family: "Nether"
+                font-size: 64px
+        .baner-2
             position: relative
-            padding: 0
-            width: 10px
-            height: 10px
-            box-sizing: content-box
-            &::before, &::after
+            width: 350px
+            height: 470px
+            background-image: url(/img/poster-2.png)
+            p
+                font-family: 'roboto', sans-serif
+                font-size: 24px
+                margin: 0 0
+                color: white
+                text-transform: uppercase
+                font-weight: bold
+                position: absolute
+                right: 80px
+                bottom: 200px
+            &::after
                 content: ""
                 position: absolute
-                width: 13px
-                height: 18px
-                left: 0px
-                top: -6px
-                background: $black
-                border-top: 1px solid $black
-                border-right: 1px solid $black
-                border-bottom: 1px solid $black
-                border-left: 1px solid $black
-                border-radius: 50% 50% 0% 0%
-                transform: rotate(45deg)          
-            &::after
-                left: -5px
-                top: -6px
-                transform: rotate(-45deg)
-        .basket
-            padding: 0
-            position: relative
-            width: 1px
-            height: 1px
-            left: 0
-            bottom: 0
-            background: $black
-            border-top: 1px solid $black
-            border-right: 1px solid $black
-            border-bottom: 1px solid $black
-            border-left: 1px solid $black
-            border-radius: 50% 50% 0% 0%
-
-
+                right: 10px
+                top: -35px
+                background-image: url(/img/sale.png)
+                width: 64px
+                height: 64px
+            .button
+                width: 200px
+                height: 40px
+                border-radius: 100px
+                background: $dark-blue
+                display: flex
+                align-items: center
+                justify-content: center
+                box-shadow: 0 0 4px rgb(0,0,0)
+                cursor: pointer
+                position: absolute
+                left: 90px
+                bottom: 20px
+                p
+                    font-size: 16px
+                    position: relative
+                    right: 0
+                    bottom: 0
+    .block-2
+        .row
+            div::last-child
+                p::nth-child(1)
+                    font-size: 24px
+                    text-transform: uppercase
+                
+                
 
 
 
