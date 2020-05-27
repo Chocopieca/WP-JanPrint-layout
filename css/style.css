@@ -83,8 +83,8 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0 0 4px black;
-          box-shadow: 0 0 4px black;
+  -webkit-box-shadow: 0 6px 12px 0 #bbbaba;
+          box-shadow: 0 6px 12px 0 #bbbaba;
   cursor: pointer;
   position: absolute;
   left: 90px;
@@ -135,26 +135,15 @@ a:hover {
   position: relative;
   float: right;
   color: #636363;
-  padding-right: 15px;
-  margin: 25px 20px 0;
+  padding-right: 20px;
+  margin: 24px 15px 0;
   text-transform: uppercase;
   font-size: 1em;
-}
-
-.top-nav_lang::after {
-  content: "";
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  right: 4px;
-  bottom: 6px;
-  background: transparent;
-  border-top: 1px solid transparent;
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid #636363;
-  border-left: 1px solid #636363;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .top-nav_right {
@@ -180,6 +169,7 @@ a:hover {
   width: 350px;
   height: 470px;
   background-image: url(/img/poster-1.png);
+  background-size: cover;
 }
 
 .wrapper .block .baner-1 p {
@@ -203,6 +193,8 @@ a:hover {
 
 .wrapper .block .baner-1 .button {
   background: #4972e7;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
 }
 
 .wrapper .block .baner-1 .button p {
@@ -225,6 +217,7 @@ a:hover {
   width: 350px;
   height: 470px;
   background-image: url(/img/poster-2.png);
+  background-size: cover;
 }
 
 .wrapper .block .baner-2 p {
@@ -251,6 +244,8 @@ a:hover {
 
 .wrapper .block .baner-2 .button {
   background: #4972e7;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
 }
 
 .wrapper .block .baner-2 .button p {
@@ -287,6 +282,10 @@ a:hover {
 .wrapper .block-2 .row div:last-child .button p {
   font-size: 16px;
   bottom: -27px;
+}
+
+.wrapper .block-3 {
+  padding-bottom: 130px;
 }
 
 .wrapper .block-3 .row div img {
@@ -337,4 +336,97 @@ a:hover {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.wrapper .form {
+  padding-bottom: 165px;
+}
+
+.wrapper .form .col-6:last-child p {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 40px;
+  color: #adafb3;
+}
+
+.wrapper .form .col-6:last-child form input {
+  display: block;
+  margin-bottom: 20px;
+  width: 230px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #adafb3;
+  padding: 15px;
+}
+
+.wrapper .form .col-6:last-child form input:last-child {
+  font-family: "roboto", sans-serif;
+  border: 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  margin-top: 40px;
+  left: 0;
+  bottom: 0;
+  background: #de2a6c;
+  width: 190px;
+  -webkit-box-shadow: 0 6px 12px 0 #bbbaba;
+          box-shadow: 0 6px 12px 0 #bbbaba;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .tagline-end p {
+  font-family: "Nether";
+  font-size: 54px;
+  text-align: center;
+  color: #636363;
+}
+
+footer .privacy {
+  text-transform: uppercase;
+  padding-bottom: 60px;
+}
+
+footer .privacy .col-4:first-child {
+  text-align: start;
+}
+
+footer .privacy a {
+  display: block;
+  padding-bottom: 19px;
+}
+
+footer .privacy .currency select {
+  margin-top: 20px;
+  border: 1px solid #adafb3;
+  border-radius: 100px;
+  width: 150px;
+}
+
+footer .privacy .currency select option .float-left {
+  display: inline-block;
+  padding-left: 35px;
+}
+
+footer .social {
+  text-transform: uppercase;
+  color: #adafb3;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+footer .social .col-4:first-child {
+  text-align: start;
+}
+
+footer .social .col-4:nth-child(2) a {
+  padding: 0 2px;
+}
+
+footer .social .col-4:last-chilf {
+  text-align: start;
 }

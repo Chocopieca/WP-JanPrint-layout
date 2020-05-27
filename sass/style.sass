@@ -29,7 +29,7 @@ a
     display: flex
     align-items: center
     justify-content: center
-    box-shadow: 0 0 4px rgb(0,0,0)
+    box-shadow: 0 6px 12px 0 #bbbaba
     cursor: pointer
     position: absolute
     left: 90px
@@ -62,23 +62,26 @@ a
         position: relative
         float: right
         color: $text-color
-        padding-right: 15px
-        margin: 25px 20px 0
+        padding-right: 20px
+        margin: 24px 15px 0
         text-transform: uppercase
         font-size: $nav-menu
-        &::after
-            content: ""
-            position: absolute
-            width: 7px
-            height: 7px
-            right: 4px
-            bottom: 6px
-            background: transparent
-            border-top: 1px solid transparent
-            border-right: 1px solid transparent
-            border-bottom: 1px solid $text_color
-            border-left: 1px solid $text_color
-            transform: rotate(-45deg)
+        border: 0
+        cursor: pointer
+        appearance: none
+        // &::after
+        //     content: ""
+        //     position: absolute
+        //     width: 7px
+        //     height: 7px
+        //     right: 4px
+        //     bottom: 6px
+        //     background: transparent
+        //     border-top: 1px solid transparent
+        //     border-right: 1px solid transparent
+        //     border-bottom: 1px solid $text_color
+        //     border-left: 1px solid $text_color
+        //     transform: rotate(-45deg)
 
     &_right
         display: flex
@@ -94,6 +97,7 @@ a
             width: 350px
             height: 470px
             background-image: url(/img/poster-1.png)
+            background-size: cover
             p
                 font-family: 'roboto', sans-serif
                 font-size: 24px
@@ -111,6 +115,7 @@ a
                 height: 70px
             .button
                 background: $dark-blue
+                box-shadow: 0 0 0 0 transparent
                 p
                     font-size: 16px
         .tagline
@@ -125,6 +130,7 @@ a
             width: 350px
             height: 470px
             background-image: url(/img/poster-2.png)
+            background-size: cover
             p
                 font-family: 'roboto', sans-serif
                 font-size: 24px
@@ -145,6 +151,7 @@ a
                 height: 64px
             .button
                 background: $dark-blue
+                box-shadow: 0 0 0 0 transparent
                 p
                     font-size: 16px
                     position: relative
@@ -169,6 +176,7 @@ a
                         font-size: 16px
                         bottom: -27px
     .block-3
+        padding-bottom: 130px
         .row
             div
                 img
@@ -208,7 +216,78 @@ a
                     text-transform: uppercase
                     font-weight: bold
                     margin-bottom: 5px
-                    
+    .form
+        padding-bottom: 165px
+        .col-6:last-child
+            p
+                font-size: 24px
+                text-transform: uppercase
+                font-weight: bold
+                padding-bottom: 40px
+                color: $text-color-dark
+            form
+                input
+                    display: block
+                    margin-bottom: 20px
+                    width: 230px
+                    height: 40px
+                    border-radius: 100px
+                    border: 1px solid $text-color-dark
+                    padding: 15px
+                input:last-child
+                    font-family: "roboto", sans-serif
+                    border: 0
+                    text-transform: uppercase
+                    color: white
+                    font-weight: bold
+                    margin-top: 40px
+                    left: 0
+                    bottom: 0
+                    background: $pink
+                    width: 190px
+                    box-shadow: 0 6px 12px 0 #bbbaba
+footer
+    text-align: center
+    .tagline-end
+        p
+            font-family: "Nether"
+            font-size: 54px
+            text-align: center
+            color: $text-color
+    .privacy
+        text-transform: uppercase
+        padding-bottom: 60px
+        .col-4:first-child
+            text-align: start
+        a
+            display: block
+            padding-bottom: 19px
+        .currency
+            select
+                margin-top: 20px
+                border: 1px solid $text-color-dark
+                border-radius: 100px
+                width: 150px
+                option
+                    .float-left
+                        display: inline-block
+                        padding-left: 35px
+    .social
+        text-transform: uppercase
+        color: $text-color-dark
+        font-weight: 500
+        padding-bottom: 25px
+        .col-4:first-child
+            text-align: start 
+        .col-4:nth-child(2)
+            a
+                padding: 0 2px
+        .col-4:last-chilf
+            text-align: start
+
+                 
+
+
 
 
 
