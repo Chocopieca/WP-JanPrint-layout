@@ -52,7 +52,7 @@ body {
   color: #636363;
   font-size: 14px;
   background-color: #ffffff;
-  padding-top: 15px;
+  padding-top: 29px;
 }
 
 img {
@@ -63,10 +63,18 @@ img {
 a {
   color: #636363;
   cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 a:hover {
   text-decoration: none;
+  color: #636363;
+}
+
+a:focus, button:focus {
+  border: 0;
+  outline: 0;
 }
 
 .button {
@@ -99,36 +107,16 @@ a:hover {
 }
 
 .top-nav {
-  padding: 15px 0 45px 0;
-}
-
-.top-nav .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.top-nav_logo {
-  float: left;
+  padding: 0 0 45px;
 }
 
 .top-nav_menu {
-  float: left;
-  margin: 25px;
+  margin-top: 28px;
 }
 
 .top-nav_menu li {
-  margin-left: 45px;
+  margin-left: 47px;
   display: inline-block;
-}
-
-.top-nav_menu li a {
-  text-transform: uppercase;
-  font-size: 1em;
-}
-
-.top-nav_menu li a:hover {
-  color: #636363;
 }
 
 .top-nav_lang {
@@ -147,6 +135,7 @@ a:hover {
 }
 
 .top-nav_right {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,6 +147,61 @@ a:hover {
 
 .top-nav_right a {
   padding: 0 10px;
+}
+
+.top-nav_right button.collapsed {
+  background: url(/img/burger.png) no-repeat;
+}
+
+.top-nav_right button {
+  z-index: 100;
+  margin-left: 1em;
+  background: url(/img/burger-close.png) no-repeat;
+  width: 31px;
+  height: 23px;
+  border-radius: 0;
+}
+
+.top-nav .navbar-collapse {
+  z-index: 50;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.top-nav .navbar-collapse_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+}
+
+.top-nav .navbar-collapse_content ul {
+  padding: 150px 0 80px;
+}
+
+.top-nav .navbar-collapse_content ul li {
+  padding-bottom: 37px;
+}
+
+.top-nav .navbar-collapse_content p {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 28px;
+}
+
+.top-nav .navbar-collapse_content .social-top {
+  padding-bottom: 35px;
 }
 
 .wrapper .block {
@@ -429,4 +473,10 @@ footer .social .col-4:nth-child(2) a {
 
 footer .social .col-4:last-chilf {
   text-align: start;
+}
+
+@media screen and (max-width: 991.98px) {
+  .wrapper .block .tagline h1 {
+    font-size: 35px;
+  }
 }

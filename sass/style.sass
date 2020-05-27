@@ -10,7 +10,7 @@ body
     color: $text-color
     font-size: 14px
     background-color: $body-bg
-    padding-top: 15px
+    padding-top: 29px
 
 img
     max-width: 100%
@@ -19,8 +19,14 @@ img
 a
     color: $text-color
     cursor: pointer
+    font-size: $nav-menu
+    text-transform: uppercase
     &:hover
         text-decoration: none
+        color: $text-color
+a:focus, button:focus
+    border: 0
+    outline: 0
 .button
     width: 200px
     height: 40px
@@ -42,22 +48,13 @@ a
 
 // header
 .top-nav
-    padding: 15px 0 45px 0
+    padding: 0 0 45px
     .row
-        justify-content: space-between
-    &_logo
-        float: left
     &_menu
-        float: left
-        margin: 25px
+        margin-top: 28px
         li
-            margin-left: 45px
+            margin-left: 47px
             display: inline-block
-            a
-                text-transform: uppercase
-                font-size: $nav-menu
-            a:hover
-                color: $text-color
     &_lang
         position: relative
         float: right
@@ -84,11 +81,46 @@ a
         //     transform: rotate(-45deg)
 
     &_right
+        position: relative
         display: flex
         align-items: center
         margin: 20px auto
         a
             padding: 0 10px
+        button.collapsed
+            background: url(/img/burger.png) no-repeat
+        button
+            z-index: 100
+            margin-left: 1em
+            background: url(/img/burger-close.png) no-repeat
+            width: 31px
+            height: 23px
+            border-radius: 0
+                
+    .navbar-collapse
+        z-index: 50
+        transition: all 0s ease
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        &_content
+            display: flex
+            align-items: center
+            flex-direction: column
+            background: white
+            ul
+                padding: 150px 0 80px
+                li
+                    padding-bottom: 37px
+            p
+                text-transform: uppercase
+                font-size: 14px
+                padding-bottom: 28px
+            .social-top
+                padding-bottom: 35px
+            
+
 .wrapper
     .block
         padding-bottom: 140px
@@ -285,23 +317,20 @@ footer
         .col-4:last-chilf
             text-align: start
 
-                 
-
-
-
-
-
 // media
-@media screen and (min-width: 575.98px)
-    body
-    
-@media screen and (min-width: 767.98px)
+@media screen and (max-width: 575.98px)
     body
 
-@media screen and (min-width: 991.98px)
+@media screen and (max-width: 767.98px)
     body
-    
-@media screen and (min-width: 1199.98px)
+
+@media screen and (max-width: 991.98px)
+    .wrapper
+        .block
+            .tagline
+                h1
+                    font-size: 35px
+@media screen and (max-width: 1199.98px)
     body
 
     

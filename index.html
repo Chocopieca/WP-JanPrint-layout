@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jam - Открытки на подарок</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
 </head>
 <body>
-    <header class="container-fluid px-0">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script> -->
+    <header class="container-fluid px-lg-0">
         <nav class="top-nav container px-0">
             <div class="clearfix">
+                <div class="collapse navbar-collapse d-lg-none postion-absolute" id="navbarContent">
+                    <div class="navbar-collapse_content">
+                        <ul class="navbar-nav">
+                            <li><a href="#">postcards & posters</a></li>
+                            <li><a href="#">calendars</a></li>
+                            <li><a href="#">for business</a></li>
+                            <li><a href="#">cooperation</a></li>
+                            <li><a href="#">postcards & posters</a></li>
+                        </ul>
+
+                        <p>country and currency</p>
+
+                        <div class="social-top">
+                            <a href="#"><img src="/img/twitter.png" alt="twitter"></a>
+                            <a href="#"><img src="/img/facebook.png" alt="facebook"></a>
+                            <a href="#"><img src="/img/instagram.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+
                 <a class="top-nav_logo float-left" href="#">
                     <svg width="71px" height="64px">
                         <title>Jam</title>
@@ -19,23 +41,23 @@
                         </g>
                     </svg>
                 </a>
-                
-                <ul class="top-nav_menu float-left">
+
+                <ul class="top-nav_menu float-left d-none d-lg-inline-block">
                     <li><a href="#">postcards & posters</a></li>
                     <li><a href="#">calendars</a></li>
                     <li><a href="#">for business</a></li>
                     <li><a href="#">cooperation</a></li>
                     <li><a href="#">postcards & posters</a></li>
-
                 </ul>
 
                 <div class="top-nav_right float-right">
                     <a href="#" class="surch col-auto"><img src="/img/surch.png" alt="surch"></a>
                     <a href="#" class="like col-auto"><img src="/img/like.png" alt="like"></a>
                     <a href="#" class="basket col-auto"><img src="/img/basket.png" alt="basket"></a>
+                    <button class="navbar-toggler float-right d-lg-none" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"></button>
                 </div>
 
-                <div class="top-nav_lang float-right">
+                <div class="top-nav_lang float-right d-none d-lg-inline-block">
                     <p>EN</p>
                 </div>
             </div>
@@ -45,16 +67,16 @@
     <div class="wrapper container-fluid">
         <div class="container block">
             <div class="row">
-                <div class="col-4 baner-1">
+                <div class="col-12 col-lg-4 baner-1">
                     <p>Latest Items</p>
                     <a href="#" class="button">
                         <p>shop now</p>
                     </a>
                 </div>
-                <div class="col-4 tagline clearfix">
-                    <h1 class="float-right">Find the best for you</h1>
+                <div class="col-12 order-first order-lg-2 col-lg-4 tagline clearfix">
+                    <h1 class="float-right">Find the best <br> for you</h1>
                 </div>
-                <div class="col-4 baner-2">
+                <div class="col-12 col-lg-4 order-lg-3 baner-2 d-none d-lg-inline-block">
                     <p>Sale</p>
                     <a href="#" class="button">
                         <p>shop now</p>
@@ -141,9 +163,10 @@
                     <a href="#">contact</a>
                 </div>
                 <div class="col-4 currency">
-                    <div class="change">
-                        <ul></ul>
-                    </div>
+                    <!-- <select class="js-example-templating" name="state">
+                        <option value="FR">france</option>
+                        <option value="FR">ukrain</option>
+                    </select> -->
                 </div>
             </div>
         </div>
@@ -164,9 +187,9 @@
             </div>
         </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- <script src="/js/main.js"></script> -->
 </body>
 </html>
