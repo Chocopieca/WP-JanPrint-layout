@@ -476,7 +476,32 @@ footer .social .col-4:last-chilf {
 }
 
 @media screen and (max-width: 991.98px) {
-  .wrapper .block .tagline h1 {
+  .wrapper .block .mobile .tagline {
+    right: 0;
+    margin-top: 30px;
+    margin-bottom: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper .block .mobile .tagline h1 {
     font-size: 35px;
+  }
+  .wrapper .block .mobile .first-carousel .baner-1 {
+    background-image: none;
+  }
+  .wrapper .block .mobile .first-carousel .baner-1 .poster {
+    background: url(/img/poster-1.png);
+    height: 234px;
+  }
+  .wrapper .block .mobile .first-carousel .baner-2 {
+    background-image: none;
+  }
+  .wrapper .block .mobile .first-carousel .baner-2 .poster {
+    background-image: url(/img/poster-2.png);
+    height: 234px;
   }
 }
